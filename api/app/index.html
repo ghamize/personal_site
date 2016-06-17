@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dr. Moska Hamidi</title>
+	<!--Styles-->
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/ui.css">
+
+	<!--vendor-->
+	<!--angular-->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.0/angular-ui-router.js"></script>
+	<!--jquery -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.js"></script>
+
+	<!--app controllers-->
+	<script type="text/javascript" src="app.js"></script>
+	<script type="text/javascript" src="site/controllers/main.ctrl.js"></script>
+</head>
+<!--main site/index-->
+
+	<body ng-app="siteApp">
+<!--header img-->
+			<img src="assets/img/header.png" class="main_header animated">
+
+<!--static content(layout)-->
+
+				<div class="container animated second">
+					<section class="inside_content">
+						<div class="col-md-4 col-sm-4 col-xs-4">
+
+							<div class="left_nav">
+
+								<P>
+									<a ui-sref="home">Home</a><BR>
+								</P>
+								<P>
+									<a ui-sref="about">About</a><BR>
+								</P>
+								<p>
+									<a ui-sref="academic">Academics</a><BR>
+								</P>
+								<P>
+									<a ui-sref="publications">Publications</a><BR>
+								</P>
+								<P>
+									<a ui-sref="journal">Journal</a><BR>
+								</P>
+								
+								<P>
+									<a ui-sref="contact">Contact</a>
+								</P>
+									
+								<img src="assets/img/indent.png" class="separator">
+								<BR><BR>
+<!--social media images-->
+									<div class="social">
+										<div class="col-md-6 col-sm-6">
+											<a href="http://www.facebook.com"><img src="assets/img/facebook.png" class="social_img"></a>
+										</div>
+										<div class="col-md-6 col-sm-6">
+											<a href="http://www.twitter.com"><img src="assets/img/twitter.png" class="social_img"></a>
+										</div>
+										<div class="col-md-6 col-sm-6">
+											<a href="http://www.linkedin.com"><img src="assets/img/linkedin.png" class="social_img"></a>
+										</div>
+										<div class="col-md-6 col-sm-6">
+											<a href="http://www.google.com"><img src="assets/img/google.png" class="social_img"></a>
+										</div>	
+
+									</div>
+							</div>
+
+						</div>
+						
+						<div class="col-md-8 col-sm-8 col-xs-8">	
+<!--dynamic content-->
+							<div ui-view class="wrapper">
+							
+							<!--dynamic content goes in here-->
+
+							</div>
+
+						</div>
+							</div>
+												
+								</section>
+	
+<!--static footer
+	<div class="footer animated last">
+		<div class="col-md-4 col-sm-12">
+			admin login
+		</div>
+		<div class="col-md-4 col-sm-12">
+			(C) 2016
+		</div>
+		<div class="col-md-4 col-sm-12">
+			designed by: Ghezal Hamidi
+		</div>
+
+	</div>
+	-->
+
+	</body>
+</html>
